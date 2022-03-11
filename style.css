@@ -14,7 +14,7 @@
 }
 
 .navbar ul{
-    position: fixed;
+        position: absolute;
     display: flex;
     right: 10px;
     margin-right: 5px;
