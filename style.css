@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    padding: 5px;
+}
+
+.navbar ul{
+    position: fixed;
+    display: flex;
+    right: 10px;
+    margin-right: 5px;
+    align-items: center;
+    top: 10px;
+}
+
+
+.navbar ul li{
+    padding-left: 10px;
+    list-style: none;
+    
+}
+.navbar ul li a{
+text-decoration: none;
+font-size: 22px;
+}
+
+.logo{
+    position: absolute;    font-size: 35px;
+}
+
+.logo #sp1{
+color: rgb(56 54 54);
+}
+.logo #sp2{
+color: rgb(199, 198, 198);
+}
+
+
+
+.navbar::before{
+    content: "";
+    background-color: rgb(138, 137, 137);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 70px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+
+.home{
+    display: flex;
+    position:relative;
+    top: 80px;
+}
+.home img{
+    height: auto;
+    width: 100%;
+}
+.home  .box h1{
+    color: rgb(96, 94, 94);
+   font-size: 50px;
+}
+
+.home .box button{
+    display: block;
+    position: relative;
+ height: 70px;
+ width: 290px;
+ background-color:rgb(96, 94, 94);
+ border-radius: 35px;
+ top: 20px;
+ margin: auto;
+ border-style: none;
+}
+
+.home .box button:hover{
+    background-color: rgb(52, 51, 51);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for tablets */
+
+@media screen and (max-width: 1000px) {
+    
+    .home  .box h1{
+        color: rgb(96, 94, 94);
+       font-size: 40px;
+    }
+
+
+
+    .home .box button{
+        height: 50px;
+        width: 200px;
+
+
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+/* for mobile phones */
+
+@media screen and (max-width: 650px) {
+
+    .navbar{
+        position: relative;
+        flex-direction: row-reverse;
+    }
+
+   .navbar::before{
+       position: fixed;
+   }
+
+   .navbar .logo{
+       position: fixed;
+       z-index: 2;
+   }
+    .navbar ul{
+        top: 70px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+         list-style: none;
+         margin-left: 2.5px;
+          right: 0px;
+          margin-top: 29px;
+          
+    }
+    .navbar ul li a{
+        margin-top: 30px;
+        padding-top: 10px;
+        padding: 10px;
+        display: block;
+    }
+
+    #slidebar #toggle{
+        position: fixed;
+        top: 15px;
+        left: 15px;
+           
+        }
+
+        #toggle span {
+            height: 5px;
+            width: 40px;
+            background-color: #0c0a0a;;
+            display: block;
+            margin-top: 4px;
+        }
+
+        #slidebar {
+            position: absolute;
+            width: 300px;
+            height: 100%;
+            background: #000000d1;
+            left: -330px;
+            transition: .4s;
+                z-index: 1;
+                top: 0px;
+          }
+
+
+          #slidebar.active{
+            left: -100px;
+        }
+
+
+
+
+        .home{
+            flex-direction: column;
+        }
+
+
+        .home img{
+            height: 50%;
+            width: 100%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
