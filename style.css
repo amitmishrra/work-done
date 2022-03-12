@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
 
+html {
+    scroll-behavior: smooth;
+  }
 
 *{
     padding: 0;
@@ -32,6 +35,11 @@
 .navbar ul li a{
 text-decoration: none;
 font-size: 22px;
+padding: 10px;
+}
+
+.navbar ul li a:hover{
+    color: black;
 }
 
 .logo{
@@ -95,15 +103,144 @@ color: rgb(199, 198, 198);
     top: 130px;
     color: #0c0a0a;
     position: relative;
-    border-top: 1px solid ;
+    border-top: 1px solid #605e5e ;
 
 }
 .serv h1{
+    font-size: 50px;
     margin: auto;
     display: block;
     color: #605e5e;
-    width: 207px;
+    width: 323px;
 }
+
+
+
+.icons .box1{
+    display: flex;
+    color: #605e5e;
+    padding: 10px;
+}
+.icons .box2{
+    display: flex;
+    color: #605e5e;
+    padding: 10px;
+}
+.icons .box3{
+    display: flex;
+    color: #605e5e;
+    padding: 10px;
+}
+
+
+
+
+.icons .box1 span{
+    display: flex;
+    flex-direction: column;
+  
+    padding: 10px;
+    margin: 10px;
+    color: #605e5e;;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px 2px rgb(157, 155, 155);
+   
+text-align: center;
+}
+
+
+
+.icons .box2 span{
+ 
+    padding: 5px;
+    margin: 10px;
+    color: #605e5e;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px 2px rgb(157, 155, 155);
+   
+text-align: center;
+}
+.icons .box3 span{
+   
+    padding: 10px;
+    margin: 10px;
+    color: #605e5e;;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px 2px rgb(157, 155, 155);
+   
+text-align: center;
+   
+}
+
+
+.icons .box1 span:hover{
+    box-shadow: 2px 2px 2px 2px rgb(59, 57, 57);
+
+}
+.icons .box2 span:hover{
+    box-shadow: 2px 2px 2px 2px rgb(59, 57, 57);
+
+}
+.icons .box3 span:hover{
+    box-shadow: 2px 2px 2px 2px rgb(59, 57, 57);
+
+}
+
+
+
+
+
+
+.icons .box1 img{
+    width: 50%;
+    align-self: center;
+}
+.icons .box2 img{
+    width: 50%;
+    align-self: center;
+}
+.icons .box3 img{
+    width: 50%;
+    align-self: center;
+}
+
+
+.jobs{
+    border-top: 1px solid #605e5e;
+    position: relative;
+    top: 140px;
+}
+
+
+.jobs h1{
+color:#605e5e;
+font-size: 50px;
+margin: auto;
+display: block;
+width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -218,6 +355,7 @@ color: rgb(199, 198, 198);
             flex-direction: column;
         }
 
+       
 
         .home img{
             height: 50%;
@@ -225,13 +363,31 @@ color: rgb(199, 198, 198);
         }
 
 
+        .serv h1{
+            font-size: 40px; 
+            width: 259px; 
+          }
+
+
+        .icons .box1 span{
+        
+            font-size: 20px;
+           
+        }
+        .icons .box2 span{
+           
+            font-size: 20px;
+        }
+        .icons .box3 span{
+           
+            font-size: 20px;
+        }
 
 
 
-
-
-
-
+.jobs h1{
+    font-size: 40px;
+}
 
 
 
