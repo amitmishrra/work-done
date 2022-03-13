@@ -1,337 +1,317 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
-
-html {
-    scroll-behavior: smooth;
-  }
-
-*{
-    padding: 0;
-    margin: 0;
-    font-family: Poppins;
-    color: white;
-}
-
-.navbar{
-    display: flex;
-    padding: 5px;
-    z-index: 2;
-}
-
-.navbar ul{
-        position: absolute;
-    display: flex;
-    right: 10px;
-    margin-right: 5px;
-    align-items: center;
-    top: 10px;
-}
-
-
-.navbar ul li{
-    padding-left: 10px;
-    list-style: none;
+    @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+    html {
+        scroll-behavior: smooth;
+    }
     
-}
-.navbar ul li a{
-text-decoration: none;
-font-size: 22px;
-padding: 10px;
-}
-
-.navbar ul li a:hover{
-    color: black;
-}
-
-.logo{
-    position: absolute;    font-size: 35px;
-}
-
-.logo #sp1{
-color: rgb(56 54 54);
-}
-.logo #sp2{
-color: rgb(199, 198, 198);
-}
-
-
-
-.navbar::before{
-    content: "";
-    background-color: rgb(138, 137, 137);
-    position: absolute;
-    top:0px;
-    left:0px;
-    height: 70px;
-    width: 100%;
-    z-index: -1;
-
-}
-
-
-.home{
-    display: flex;
-    position:relative;
-    top: 80px;
-}
-.home img{
-    height: auto;
-    width: 100%;
-}
-.home  .box h1{
-    color: rgb(96, 94, 94);
-   font-size: 50px;
-}
-
-.home .box button{
-    display: block;
-    position: relative;
- height: 70px;
- width: 290px;
- background-color:rgb(96, 94, 94);
- border-radius: 35px;
- top: 20px;
- margin: auto;
- border-style: none;
-}
-
-.home .box button:hover{
-    background-color: rgb(52, 51, 51);
-}
-
-
-.serv{
-    top: 130px;
-    color: #0c0a0a;
-    position: relative;
-    border-top: 1px solid #605e5e ;
-
-}
-.serv h1{
-    font-size: 50px;
-    margin: auto;
-    display: block;
-    color: #605e5e;
-    width: 323px;
-}
-
-
-
-.icons .box1{
-    display: flex;
-    color: #605e5e;
-    padding: 10px;
-}
-.icons .box2{
-    display: flex;
-    color: #605e5e;
-    padding: 10px;
-}
-.icons .box3{
-    display: flex;
-    color: #605e5e;
-    padding: 10px;
-}
-
-
-
-
-.icons .box1 span{
-    display: flex;
-    flex-direction: column;
-  
-    padding: 10px;
-    margin: 10px;
-    color: #605e5e;;
-    font-size: 30px;
-    text-align: center;
-    border-radius: 7px;
-    box-shadow: 1px 1px 2px 2px rgb(157, 155, 155);
-   
-text-align: center;
-}
-
-
-
-.icons .box2 span{
- 
-    padding: 5px;
-    margin: 10px;
-    color: #605e5e;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 7px;
-    box-shadow: 1px 1px 2px 2px rgb(157, 155, 155);
-   
-text-align: center;
-}
-.icons .box3 span{
-   
-    padding: 10px;
-    margin: 10px;
-    color: #605e5e;;
-    font-size: 30px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 7px;
-    box-shadow: 1px 1px 2px 2px rgb(157, 155, 155);
-   
-text-align: center;
-   
-}
-
-
-.icons .box1 span:hover{
-    box-shadow: 2px 2px 2px 2px rgb(59, 57, 57);
-
-}
-.icons .box2 span:hover{
-    box-shadow: 2px 2px 2px 2px rgb(59, 57, 57);
-
-}
-.icons .box3 span:hover{
-    box-shadow: 2px 2px 2px 2px rgb(59, 57, 57);
-
-}
-
-
-
-
-
-
-.icons .box1 img{
-    width: 50%;
-    align-self: center;
-}
-.icons .box2 img{
-    width: 50%;
-    align-self: center;
-}
-.icons .box3 img{
-    width: 50%;
-    align-self: center;
-}
-
-
-.jobs{
-    border-top: 1px solid #605e5e;
-    position: relative;
-    top: 140px;
-}
-
-
-.jobs h1{
-color:#605e5e;
-font-size: 50px;
-margin: auto;
-display: block;
-width: 100px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* for tablets */
-
-@media screen and (max-width: 1000px) {
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: Poppins;
+        color: white;
+    }
     
-    .home  .box h1{
-        color: rgb(96, 94, 94);
-       font-size: 40px;
+    .navbar {
+        display: flex;
+        padding: 5px;
+        z-index: 2;
     }
-
-
-
-    .home .box button{
-        height: 50px;
-        width: 200px;
-
-
-    }
-
-    .home{
-        flex-direction: column;
-    }
-
-
-}
-
-
-
-/* for mobile phones */
-
-@media screen and (max-width: 650px) {
-
-    .navbar{
-        position: relative;
-        flex-direction: row-reverse;
-
-    }
-
-   .navbar::before{
-       position: fixed;
-   }
-
-   .navbar .logo{
-       position: fixed;
-       z-index: 2;
-   }
-    .navbar ul{
-        top: 70px;
+    
+    .navbar ul {
         position: absolute;
         display: flex;
-        flex-direction: column;
-         list-style: none;
-         margin-left: 2.5px;
-          right: 0px;
-          margin-top: 29px;
-          
-          
+        right: 10px;
+        margin-right: 5px;
+        align-items: center;
+        top: 10px;
     }
-    .navbar ul li a{
-        margin-top: 30px;
-        padding-top: 10px;
+    
+    .navbar ul li {
+        padding-left: 10px;
+        list-style: none;
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        font-size: 22px;
         padding: 10px;
-        display: block;
     }
-
-    #slidebar #toggle{
-        position: fixed;
-        top: 15px;
-        left: 15px;
-           
+    
+    .navbar ul li a:hover {
+        color: black;
+    }
+    
+    .logo {
+        position: absolute;
+        font-size: 35px;
+    }
+    
+    .logo #sp1 {
+        color: rgb(56 54 54);
+    }
+    
+    .logo #sp2 {
+        color: rgb(199, 198, 198);
+    }
+    
+    .navbar::before {
+        content: "";
+        background-color: rgb(138, 137, 137);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 70px;
+        width: 100%;
+        z-index: -1;
+    }
+    
+    .home {
+        display: flex;
+        position: relative;
+        top: 80px;
+    }
+    
+    .home img {
+        height: auto;
+        width: 100%;
+    }
+    
+    .home .box h1 {
+        color: rgb(96, 94, 94);
+        font-size: 50px;
+    }
+    
+    .home .box button {
+        font-size: 25px;
+        display: block;
+        position: relative;
+        height: 70px;
+        width: 290px;
+        background-color: rgb(96, 94, 94);
+        border-radius: 35px;
+        top: 20px;
+        margin: auto;
+        border-style: none;
+    }
+    
+    .home .box button:hover {
+        background-color: rgb(52, 51, 51);
+    }
+    
+    .serv {
+        top: 130px;
+        color: #0c0a0a;
+        position: relative;
+        border-top: 1px solid #605e5e;
+    }
+    
+    .serv h1 {
+        font-size: 50px;
+        margin: auto;
+        display: block;
+        color: #605e5e;
+        width: 323px;
+    }
+    
+    .icons .box1 {
+        display: flex;
+        color: #605e5e;
+        padding: 10px;
+    }
+    
+    .icons .box2 {
+        display: flex;
+        color: #605e5e;
+        padding: 10px;
+    }
+    
+    .icons .box3 {
+        display: flex;
+        color: #605e5e;
+        padding: 10px;
+    }
+    
+    .icons .box1 span {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        color: #605e5e;
+        ;
+        font-size: 30px;
+        text-align: center;
+        border-radius: 7px;
+        box-shadow: 1px 1px 2px 2px rgb(157, 155, 155);
+        text-align: center;
+    }
+    
+    .icons .box2 span {
+        padding: 5px;
+        margin: 10px;
+        color: #605e5e;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 7px;
+        box-shadow: 1px 1px 2px 2px rgb(157, 155, 155);
+        text-align: center;
+    }
+    
+    .icons .box3 span {
+        padding: 10px;
+        margin: 10px;
+        color: #605e5e;
+        ;
+        font-size: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 7px;
+        box-shadow: 1px 1px 2px 2px rgb(157, 155, 155);
+        text-align: center;
+    }
+    
+    .icons .box1 span:hover {
+        box-shadow: 2px 2px 2px 2px rgb(59, 57, 57);
+    }
+    
+    .icons .box2 span:hover {
+        box-shadow: 2px 2px 2px 2px rgb(59, 57, 57);
+    }
+    
+    .icons .box3 span:hover {
+        box-shadow: 2px 2px 2px 2px rgb(59, 57, 57);
+    }
+    
+    .icons .box1 img {
+        width: 50%;
+        align-self: center;
+    }
+    
+    .icons .box2 img {
+        width: 50%;
+        align-self: center;
+    }
+    
+    .icons .box3 img {
+        width: 50%;
+        align-self: center;
+    }
+    
+    .jobs {
+        border-top: 1px solid #605e5e;
+        position: relative;
+        top: 140px;
+    }
+    
+    .jobs h1 {
+        color: #605e5e;
+        font-size: 60px;
+        margin: auto;
+        display: block;
+        width: 100px;
+    }
+    
+    .cont {
+        display: flex;
+    }
+    
+    .cont h1 {
+        display: inline;
+        font-size: 40px;
+    }
+    
+    .cont img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .cont button {
+        font-size: 25px;
+        display: block;
+        position: relative;
+        height: 70px;
+        width: 290px;
+        background-color: rgb(96, 94, 94);
+        border-radius: 35px;
+        top: 20px;
+        margin: auto;
+        border-style: none;
+    }
+    
+    .cont button:hover {
+        background-color: rgb(52, 51, 51);
+    }
+    /* for tablets */
+    
+    @media screen and (max-width: 1000px) {
+        .home .box h1 {
+            color: rgb(96, 94, 94);
+            font-size: 40px;
         }
-
+        .home .box button {
+            height: 50px;
+            width: 200px;
+            font-size: 20px;
+        }
+        .home {
+            flex-direction: column;
+        }
+        .cont {
+            flex-direction: column;
+        }
+        .cont h1 {
+            font-size: 30px;
+        }
+        .cont button {
+            height: 50px;
+            width: 200px;
+            font-size: 25px;
+        }
+    }
+    /* for mobile phones */
+    
+    @media screen and (max-width: 650px) {
+        .navbar {
+            position: relative;
+            flex-direction: row-reverse;
+        }
+        .navbar::before {
+            position: fixed;
+        }
+        .navbar .logo {
+            position: fixed;
+            z-index: 2;
+        }
+        .navbar ul {
+            top: 70px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin-left: 2.5px;
+            right: 0px;
+            margin-top: 29px;
+        }
+        .navbar ul li a {
+            margin-top: 30px;
+            padding-top: 10px;
+            padding: 10px;
+            display: block;
+        }
+        #slidebar #toggle {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+        }
         #toggle span {
             height: 5px;
             width: 40px;
-            background-color: #0c0a0a;;
+            background-color: #0c0a0a;
+            ;
             display: block;
             margin-top: 4px;
-            z-index:0;
+            z-index: 0;
         }
-
         #slidebar {
             position: absolute;
             width: 300px;
@@ -341,71 +321,41 @@ width: 100px;
             transition: .4s;
             z-index: 1;
             top: 0px;
-          }
-
-
-          #slidebar.active{
+        }
+        #slidebar.active {
             left: -100px;
         }
-
-
-
-
-        .home{
+        .home {
             flex-direction: column;
         }
-
-       
-
-        .home img{
+        .home .box h1 {
+            font-size: 30px;
+        }
+        .home img {
             height: 50%;
             width: 100%;
         }
-
-
-        .serv h1{
-            font-size: 40px; 
-            width: 259px; 
-          }
-
-
-        .icons .box1 span{
-        
-            font-size: 20px;
-           
+        .serv h1 {
+            font-size: 40px;
+            width: 259px;
         }
-        .icons .box2 span{
-           
+        .icons .box1 span {
             font-size: 20px;
         }
-        .icons .box3 span{
-           
+        .icons .box2 span {
             font-size: 20px;
         }
-
-
-
-.jobs h1{
-    font-size: 40px;
-}
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
+        .icons .box3 span {
+            font-size: 20px;
+        }
+        .jobs h1 {
+            font-size: 40px;
+        }
+        .cont h1 {
+            font-size: 30px;
+        }
+        .contact h1 {
+            font-size: 30px;
+            width: 170px;
+        }
+    }
