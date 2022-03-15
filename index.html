@@ -8,6 +8,13 @@
     <title>Work Done | Get your work done</title>
     <link rel="icon" href="./icons/logo.png">
     <link rel="stylesheet" href="style.css">
+    <script src="home.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("7JPlkoF3xDWkv7XjM");
+        })();
+    </script>
 </head>
 
 <body>
@@ -36,7 +43,7 @@
 
                 <li> <a onclick="show()" href="#job">Jobs</a></li>
 
-                <li> <a href="#con">Contact Us</a></li>
+                <li> <a href="">Contact Us</a></li>
 
             </ul>
         </div>
@@ -107,7 +114,7 @@
             <img src="./icons/job.jpg" alt="">
 
             <div class="box">
-                <h1>Skilled, but unemployed. Join Work Done community and be a certified Professional at your work, with beneficial perks and wages. Apply now.
+                <h1>Skilled, but unemployed. Join Work Done community and be a certified Professional at your work, with beneficial perks and wages. Apply now for further details.
 
                 </h1>
 
@@ -121,7 +128,7 @@
     </section>
 
 
-    <section id="con" class="contact">
+    <section class="contact">
         <h1>Contact Us</h1>
 
         <div class="cont1">
@@ -146,7 +153,8 @@
                     <label class="lab" id="m" for="">Message</label>
                 </div>
 
-                <button type="submit">Send</button>
+                <button onclick='sendMail()' type="submit">Send</button>
+                <h2 id="msg2">Message Sent!</h2>
 
 
             </div>
@@ -158,7 +166,8 @@
 
 
 
-    <script src="home.js"></script>
+
+
 </body>
 
 </html>
