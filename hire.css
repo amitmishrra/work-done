@@ -1,0 +1,256 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    color: #0c0a0a;
+}
+
+.navbar {
+    display: flex;
+    padding: 5px;
+    z-index: 2;
+}
+
+.navbar ul {
+    position: absolute;
+    display: flex;
+    right: 10px;
+    margin-right: 5px;
+    align-items: center;
+    top: 10px;
+}
+
+.navbar ul li {
+    padding-left: 10px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    transition: 0.5s;
+    text-decoration: 6px underline #e03e59;
+    ;
+}
+
+.logo {
+    position: absolute;
+    font-size: 35px;
+}
+
+.logo #sp1 {
+    color: rgb(56 54 54);
+}
+
+.logo #sp2 {
+    color: rgb(199, 198, 198);
+}
+
+.navbar::before {
+    content: "";
+    background-color: rgb(138, 137, 137);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 70px;
+    width: 100%;
+    z-index: -1;
+}
+
+.hr {
+    position: relative;
+    top: 70px;
+    display: flex;
+}
+
+.hr img {
+    width: 100%;
+}
+
+.hr .details h1 {
+    font-size: 50px;
+}
+
+.frm div {
+    margin-top: 35px;
+    font-size: 30px;
+}
+
+.inp {
+    width: 300px;
+    height: 35px;
+    font-size: 25px;
+    border: none;
+    border-bottom: 1px solid #605e5e;
+}
+
+.lab {
+    position: relative;
+    left: -310px;
+    top: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+#lab2 {
+    font-size: 25px;
+}
+
+#pay label {
+    padding-left: 5px;
+}
+
+.inp:focus~label {
+    top: -30px;
+    color: #e03e59;
+    border: none;
+}
+
+.inp:valid~label {
+    top: -30px;
+}
+
+#servv {
+    display: flex;
+    flex-direction: column;
+}
+
+#btn {
+    font-size: 25px;
+    display: block;
+    position: relative;
+    height: 70px;
+    width: 290px;
+    background-color: rgb(96, 94, 94);
+    border-radius: 35px;
+    top: 20px;
+    margin: auto;
+    border-style: none;
+}
+
+#btn:hover {
+    background-color: #e03e59;
+    transition: 0.5s;
+}
+
+
+/* for tablets */
+
+@media screen and (max-width: 1220px) {
+    .hr {
+        flex-direction: column-reverse;
+    }
+    .hr img {
+        width: 100%;
+    }
+    .details {
+        padding-left: 20px;
+    }
+}
+
+
+/* for mobile phones */
+
+@media screen and (max-width: 650px) {
+    .navbar {
+        position: relative;
+        flex-direction: row-reverse;
+    }
+    .navbar::before {
+        position: fixed;
+    }
+    .navbar .logo {
+        position: fixed;
+        z-index: 2;
+    }
+    .navbar ul {
+        top: 70px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-left: 2.5px;
+        right: 0px;
+        margin-top: 29px;
+    }
+    .navbar ul li a {
+        margin-top: 30px;
+        padding-top: 10px;
+        padding: 10px;
+        display: block;
+    }
+    #slidebar #toggle {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+    }
+    #toggle span {
+        height: 5px;
+        width: 40px;
+        background-color: #0c0a0a;
+        ;
+        display: block;
+        margin-top: 4px;
+        z-index: 0;
+    }
+    #slidebar {
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        background: #000000d1;
+        left: -330px;
+        transition: .4s;
+        z-index: 1;
+        top: 0px;
+    }
+    #slidebar.active {
+        left: -100px;
+        position: fixed;
+    }
+    .inp {
+        width: 260px;
+        height: 25px;
+        font-size: 15px;
+        border: none;
+        border-bottom: 1px solid #605e5e;
+    }
+    .lab {
+        position: relative;
+        left: -270px;
+        top: 0px;
+        pointer-events: none;
+        transition: 0.5s;
+    }
+    .frm div {
+        margin-top: 25px;
+        font-size: 15px;
+    }
+    .inp:focus~label {
+        top: -25px;
+        color: #e03e59;
+        border: none;
+    }
+    .inp:valid~label {
+        top: -25px;
+    }
+    #servv {
+        font-size: 15px;
+    }
+    #lab2 {
+        font-size: 15px;
+    }
+    #btn {
+        height: 50px;
+        width: 200px;
+        font-size: 25px;
+    }
+}
