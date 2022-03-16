@@ -63,21 +63,29 @@
             <form class="frm" action="">
 
                 <div class="d">
-                    <input type="text" required name="" class="inp" id="name1">
+                    <input type="text" oninput="error1()" required name="" class="inp" id="name1">
                     <label for="" id="name2" class="lab">Name</label>
+                    <h4 class="err" id="n">Empty field</h4>
                 </div>
                 <div class="d">
 
-                    <input type="email" required name="" class="inp" id="mail1">
+                    <input oninput="error2()" type="text" required name="" class="inp" id="mail1">
                     <label for="" id="mail2" class="lab">Email</label>
+
+                    <h4 class="err" id="m">Invalid mail</h4>
+
                 </div>
                 <div class="d">
-                    <input type="text" required name="" class="inp" id="num1">
+                    <input oninput="error3()" type="text" required name="" class="inp" id="num1">
                     <label for="" id="num2" class="lab">Phone</label>
+                    <h4 class="err" id="no">Invalid Number</h4>
                 </div>
                 <div class="d">
-                    <input type="text" required name="" class="inp" id="add1">
+                    <input oninput="error4()" type="text" required name="" class="inp" id="add1">
                     <label for="" id="add2" class="lab">Address</label>
+
+                    <h4 class="err" id="a">Empty Field</h4>
+
 
                 </div>
                 <div id="servv" class="d"> <label for="" id="ser2" class="lab3">Service</label>
@@ -96,7 +104,8 @@
 
                 </div>
                 <div class="d">
-                    <input type="date" class="inp" id="dat1">
+                    <input oninput="error5()" type="date" class="inp" id="dat1">
+                    <h4 class="err" id="d">Empty field</h4>
                 </div>
                 <div id="pay" class="d">
                     <label for="mode" class="lab2">Payment : </label>
@@ -112,9 +121,9 @@
                     <label id="lab2" for="">I agree with the terms and conditions of Work Done.</label>
                     <input value="yes" type="checkbox" name="" id="cb"> <span class="ferror">
                     </div>
- </form>
-<button id="btn" type="submit">Submit</button>
-
+ 
+<button  id="btn" type="submit">Submit</button>
+</form>
 
 
 
